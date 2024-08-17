@@ -22,9 +22,9 @@ function App() {
     <>{mnemonic && <div style={{ display: `${display}` }}><h2>Secret Recovery Phrase</h2></div>}
       {mnemonic && 
       
-      <div style={{ padding: "50px", opacity: `${opacity}`,backgroundColor:'#2F4F4F',borderRadius:"10px",display:`${display}`,gridTemplateColumns:'1fr 1fr 1fr',gap:"20px"}}>
+      <div style={{ padding: "30px", opacity: `${opacity}`,backgroundColor:'#2F4F4F',borderRadius:"10px",display:`${display}`,gridTemplateColumns:'1fr 1fr 1fr',gap:"15px"}}>
         {mnemonic && mnemonic.split(' ').map((m, i) => {
-          return <div key={i} style={{display:'flex',gap:'20px',padding:'30px',fontSize:'20px'}} >
+          return <div key={i} style={{display:'flex',gap:'20px',padding:'10px',fontSize:'18px'}} >
             <span>{i + 1}</span>
             <span>{m}</span>           
           </div>
