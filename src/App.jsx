@@ -49,11 +49,11 @@ function App() {
       </div>
      
 
-      <div style={{ display: 'grid', gridTemplateColumns:'1fr 1fr',  }}>
+      <div style={{ display: 'flex', flexDirection:'column'  }}>
         
         {wallet && mnemonic && <SolanaWallet  mnemonic={mnemonic} />}
         
-
+            
         {wallet && mnemonic && <EthWallet mnemonic={mnemonic} />}
         </div>
       
